@@ -1,5 +1,5 @@
 # hapstep
-*** Stepwise Analysis of Diversity for Haploid Data with Distances Between Haplotypes ***
+Stepwise Analysis of Diversity for Haploid Data with Distances Between Haplotypes
 
 This is based on original source code of Hapstep program written by Remy PETIT (Petit at pierroton.inra.fr),  April 2000.
 Licenced under GNU General Public License. This class and methods will be included in the R package haplotypes in future updates.
