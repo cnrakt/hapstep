@@ -276,7 +276,7 @@ def=function(x,...)standardGeneric("hapstep")
 
 
 #hapstep method for Dna objects, april 21
-setMethod(f="hapstep", signature= "Dna", definition=function(x,file=NULL,indels="sic",populations,skip.se=TRUE,nperm=0,printprog=TRUE)
+setMethod(f="hapstep", signature= "Dna", definition=function(x,indels="sic",populations,skip.se=TRUE,nperm=0,printprog=TRUE)
 {
     
     infile<-prep.infile(x=x,file=NULL,indels=indels,populations=populations)
