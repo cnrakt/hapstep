@@ -8,7 +8,7 @@ Licenced under GNU General Public License. This class and methods will be includ
 ## Usage
 
 ### S4 method for signature 'Dna'
-hapstep(x,populations,indels="sic",populations, skip.se=TRUE, nperm=999,printprog=TRUE)
+hapstep(x,indels="sic",populations, skip.se=TRUE, nperm=999,printprog=TRUE)
 
 ## Arguments
 
