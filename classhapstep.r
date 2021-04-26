@@ -1,5 +1,5 @@
 ###Class Hapstep, functions and methods
-##april 2021, cnrakt
+##april 2021, cnrakt (caktas.aca at gmail.com)
 ##will be included in the package haplotypes in future updates.
 #This software is distributed under the terms of the GNU General Public License.
 
