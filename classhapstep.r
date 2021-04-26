@@ -595,7 +595,7 @@ setMethod(f="getmorethan2", signature= "Dna", definition=function(x,file=NULL,po
 
 
 
-##### EXAMLE
+##### EXAMPLES #####
 
 data(dna.obj)
 x<-dna.obj
