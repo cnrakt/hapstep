@@ -35,7 +35,7 @@ Caner Aktas, caktas.aca at gmail.com
 
 ## Examples
 
-######  Examples can be found at the end of the .r file classhapstep.r   
+Examples can be found at the end of the .r file classhapstep.r   
 
 
 
