@@ -12,14 +12,18 @@ hapstep(x,populations,indels="sic",populations, skip.se=TRUE, nperm=999,printpro
 
 ## Arguments
 
-##### x: an object of class Dna from package haplotypes.
-##### populations: a vector giving the populations, with one element per individual.
+x: an object of class Dna from package haplotypes.
 
-##### indels:  the indel coding method to be used. This must be one of "sic", "5th" or "missing". Any unambiguous substring can be given. See distance method for details.
-##### skip.se: boolean; whether the standard errors are calculated or not.
+populations: a vector giving the populations, with one element per individual.
 
-##### nperm: the number of permutations. Set this to 0 to skip the permutation procedure.
-##### printprog: boolean; whether messages and the progress bar are displayed or not.
+indels:  the indel coding method to be used. This must be one of "sic", "5th" or "missing". Any unambiguous substring can be given. See distance method for details.
+
+skip.se: boolean; whether the standard errors are calculated or not.
+
+nperm: the number of permutations. Set this to 0 to skip the permutation procedure.
+
+printprog: boolean; whether messages and the progress bar are displayed or not.
+
 
 ## Value
 
