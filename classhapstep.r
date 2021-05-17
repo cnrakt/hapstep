@@ -106,26 +106,26 @@ setMethod("show","Hapstep", function(object)
     if(length(object@vS_pval))
     {
         vSsig<-"ns"
-        if(object@vS_pval<0.1)  vSsig<-"."
-        if(object@vS_pval<0.05)  vSsig<-"*"
-        if(object@vS_pval<0.01)  vSsig<-"**"
-        if(object@vS_pval<0.001)  vSsig<-"***"
+        if(object@vS_pval<=0.1)  vSsig<-"."
+        if(object@vS_pval<=0.05)  vSsig<-"*"
+        if(object@vS_pval<=0.01)  vSsig<-"**"
+        if(object@vS_pval<=0.001)  vSsig<-"***"
     }
     if(length(object@vT_pval))
     {
         vTsig<-"ns"
-        if(object@vT_pval<0.1)  vTsig<-"."
-        if(object@vT_pval<0.05)  vTsig<-"*"
-        if(object@vT_pval<0.01)  vTsig<-"**"
-        if(object@vT_pval<0.001)  vTsig<-"***"
+        if(object@vT_pval<=0.1)  vTsig<-"."
+        if(object@vT_pval<=0.05)  vTsig<-"*"
+        if(object@vT_pval<=0.01)  vTsig<-"**"
+        if(object@vT_pval<=0.001)  vTsig<-"***"
     }
     if(length(object@Nst_pval))
     {
         Nstsig<-"ns"
-        if(object@Nst_pval<0.1)  Nstsig<-"."
-        if(object@Nst_pval<0.05)  Nstsig<-"*"
-        if(object@Nst_pval<0.01)  Nstsig<-"**"
-        if(object@Nst_pval<0.001)  Nstsig<-"***"
+        if(object@Nst_pval<=0.1)  Nstsig<-"."
+        if(object@Nst_pval<=0.05)  Nstsig<-"*"
+        if(object@Nst_pval<=0.01)  Nstsig<-"**"
+        if(object@Nst_pval<=0.001)  Nstsig<-"***"
     }
     
     cat("*** S4 Object of Class Hapstep ***\n")
@@ -276,6 +276,8 @@ def=function(x,...)standardGeneric("hapstep")
 
 
 #hapstep method for Dna objects, april 21
+#This is based on original source code of Hapstep program written by Remy PETIT (Petit at pierroton.inra.fr) April 2000. Licenced under GNU General Public License.
+
 setMethod(f="hapstep", signature= "Dna", definition=function(x,indels="sic",populations,skip.se=TRUE,nperm=0,printprog=TRUE)
 {
     
