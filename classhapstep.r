@@ -276,7 +276,6 @@ def=function(x,...)standardGeneric("hapstep")
 
 
 #hapstep method for Dna objects, april 21
-#This is based on original source code of Hapstep program written by Remy PETIT (Petit at pierroton.inra.fr) April 2000. Licenced under GNU General Public License.
 
 setMethod(f="hapstep", signature= "Dna", definition=function(x,indels="sic",populations,skip.se=TRUE,nperm=0,printprog=TRUE)
 {
@@ -288,7 +287,9 @@ setMethod(f="hapstep", signature= "Dna", definition=function(x,indels="sic",popu
     
 })
 
-#internal function: hapstep.intern1
+#internal function: hapstep.internal
+#This is based on original source code of Hapstep program written by Remy PETIT (Petit at pierroton.inra.fr) April 2000. Licenced under GNU General Public License.
+
 hapstep.internal<-function(infile,skip.se=TRUE, nperm=0,printprog=TRUE)
 {
     
