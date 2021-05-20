@@ -600,6 +600,7 @@ setMethod(f="getmorethan2", signature= "Dna", definition=function(x,file=NULL,po
 
 ##### EXAMPLES #####
 
+require(haplotypes)
 data(dna.obj)
 x<-dna.obj
 h<-haplotype(x)
