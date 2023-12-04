@@ -185,7 +185,9 @@ setMethod(f="prep.infile", signature= "Dna", definition=function(x,file=NULL,ind
         ind[ind==1]<-5
         ind[ind==0]<-1
         ind[ind==-1]<-0
-        hapcharmat<-cbind(as.numeric(as.dna(subs(as.dna(h@sequence))$subsmat)),ind)
+        s<-as.numeric(as.dna(subs(as.dna(h@sequence))$subsmat))
+        s[s==5]<-0
+        hapcharmat<-cbind(s,ind)
     }
     
     if(indels=="5th")
