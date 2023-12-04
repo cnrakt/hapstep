@@ -197,7 +197,10 @@ setMethod(f="prep.infile", signature= "Dna", definition=function(x,file=NULL,ind
     
     if(indels=="missing")
     {
-        hapcharmat<-as.numeric(as.dna(subs(as.dna(h@sequence))$subsmat))
+
+         s<-as.numeric(as.dna(subs(as.dna(h@sequence))$subsmat))
+         s[s==5]<-0
+        hapcharmat<-s
     }
     
     if(!is.null(file))
